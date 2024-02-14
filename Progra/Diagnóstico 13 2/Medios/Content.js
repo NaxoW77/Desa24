@@ -41,7 +41,7 @@ function Change(page, panel){
     if(gs==0){
     document.getElementsByClassName("background-image")[0].style.filter = `grayscale(0)`
     document.getElementById("If").setAttribute("onclick", "Change(4)")
-    document.getElementById("If").setAttribute("src", "Medios/img/If.png")
+    document.getElementById("If").setAttribute("src", "Medios/img/if.png")
     }else{
         document.getElementsByClassName("background-image")[0].style.filter = "grayscale(100)"
         document.getElementById("If").setAttribute("onclick", "Change(1)")
