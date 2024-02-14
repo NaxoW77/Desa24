@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PiruchoTravelsCR</title>
+    <link href="Medios/style.css" rel="stylesheet">
+    <script src="Medios/Navbar.js"></script>
+    <script src="Medios/Content.js"></script>
+    <link rel="icon" href="Medios/img/Icon.ico">
+</head>
+
+<body onload="Change(1);Check();">
+    <s class="background-image"></s>
+    <div class="header">
+        <a onclick="openNav();" style="margin-left:10px;margin-top:25px"><img id="if2"
+                onmouseenter="this.style.backgroundColor = '#55555550';" onmouseleave="this.style.backgroundColor = '';"
+                style="top:10px;position:fixed;border:none;" src="Medios/img/tl.png" width="50" height="50"></a>
+
+        <a onclick="" style="margin-left:930px;"><img onmouseenter="this.style.backgroundColor = '#55555550';"
+                onmouseleave="this.style.backgroundColor = '';" style="border:none;top:10px;position:fixed;"
+                onclick="Change(3);" id="If" src="Medios/img/if.png" width="50" height="50"></a>
+        <h1 style="margin-top:-0px;text-align: center;text-decoration:underline;color:white;text-shadow: 0px 0px 7px green;;"><img
+                src="Medios/img/Logo.png" alt="" width="51" style="border:none;margin-bottom: -20px;">PiruchoTravelsCR
+        </h1>
+    </div>
+    <ul id="Nav">
+        <li><a href="#" onclick="Change(1,1);">Inicio</a></li>
+        <li><a href="#" onclick="Change(2,1);">Reservaciones</a></li>
+        <li><a href="#" onclick="Change(3,1);">Nueva reservación</a></li>
+        <li><a href="#" onclick="Change(4,1);">Contacto</a></li>
+    </ul>
+    <a href="#"><img src="Medios/img/up.png" onmouseenter="this.style.backgroundColor = '#99999950';"
+            onmouseleave="this.style.backgroundColor = '';"
+            style="border:0px;position:fixed;top:90%;left:95%;scroll-behavior: smooth;" width="50"></a>
+
+    <div class="ODiv">
+        <h1>
+            <div class="IDiv">
+                <section id="S1">
+                    <h1>Tours disponibles</h1>
+                    <hr>
+                    <h2 style="margin-bottom: 50px;">Nacionales (Todo incluído).</h2>
+
+                    <a href="#" onclick="Change(2)">
+                        <div class="card" style="background-image: url('Medios/img/1.jpg');">
+                            <h2 style="position: absolute;margin-top: 30px;color:white;text-shadow: 0px 0px 7px green;">Parque Nacional Manuel Antonio</h2>
+                            
+                            <h3 style="position: absolute;margin-top: 65px;width:750px;font-size:15px;color:white;text-shadow: 0px 0px 7px green;">
+                                Duración: 3 días<br>Entrada: $16<br>Paquete todo incluído: $200 (por noche)</h3>
+                            <h3 class="remove" style="position: absolute;margin-top: 100px;width:750px;text-align: right;font-style: italic;color:white;text-shadow: 0px 0px 7px green;">Reservar →</h3>
+                        </div>
+
+                        <div class="card" style="background-image: url('Medios/img/2.jpg');background-position: 0px 460px;">
+                            <h2 style="position: absolute;margin-top: 30px;color:white;text-shadow: 0px 0px 7px green;">Volcán Arenal</h2>
+                            <h3 style="position: absolute;margin-top: 65px;width:750px;font-size:15px;color:white;text-shadow: 0px 0px 7px green;">
+                                Duración: 4 días<br>Entrada: $15<br>Paquete todo incluído: $250</h3>
+
+                            <h3 class="remove" style="position: absolute;margin-top: 100px;width:750px;text-align: right;font-style: italic;color:white;text-shadow: 0px 0px 7px green;">Reservar →</h3>
+                        </div>
+
+                        <div class="card" style="background-image: url('Medios/img/3.jpg');">
+                            <h2 style="position: absolute;margin-top: 30px;color:white;text-shadow: 0px 0px 7px green;">Monteverde</h2>
+                            <h3 style="position: absolute;margin-top: 65px;width:750px;font-size:15px;color:white;text-shadow: 0px 0px 7px green;">
+                                Duración: 1 semana<br>Entrada: $20<br>Paquete todo incluído: $300 (por noche)</h3>
+
+                            <h3 class="remove" style="position: absolute;margin-top: 100px;width:750px;text-align: right;font-style: italic;color:white;text-shadow: 0px 0px 7px green;">Reservar →</h3>
+                        </div>
+
+                        <div class="card" style="background-image: url('Medios/img/4.jpg');">
+                            <h2 style="position: absolute;margin-top: 30px;color:white;text-shadow: 0px 0px 7px green;">Cahuita</h2>
+                            <h3 style="position: absolute;margin-top: 65px;width:750px;font-size:15px;color:white;text-shadow: 0px 0px 7px green;">
+                                Duración: 5 días<br>Entrada: $5<br>Paquete todo incluído: $150 (por noche)</h3>
+
+                            <h3 class="remove" style="position: absolute;margin-top: 100px;width:750px;text-align: right;font-style: italic;color:white;text-shadow: 0px 0px 7px green;">Reservar →</h3>
+                        </div>
+
+                        <div class="card" style="background-image: url('Medios/img/5.jpg');">
+                            <h2 style="position: absolute;margin-top: 30px;color:white;text-shadow: 0px 0px 7px green;">Tortuguero</h2>
+                            <h3 style="position: absolute;margin-top: 65px;width:750px;font-size:15px;color:white;text-shadow: 0px 0px 7px green;">
+                                Duración: 2 semanas<br>Entrada: $15<br>Paquete todo incluído: $250 (por noche)</h3>
+
+                            <h3 class="remove" style="position: absolute;margin-top: 100px;width:750px;text-align: right;font-style: italic;color:white;text-shadow: 0px 0px 7px green;">Reservar →</h3>
+                        </div>
+                    </a>
+                    <hr style="border: 2px solid rgb(214, 214, 214)">
+                    <h2 style="margin-bottom: 50px;">Internacionales (Todo incluído).</h2>
+                    
+                        <a href="#" onclick="Change(2)">
+                            <div class="card" style="background-image: url('Medios/img/6.jpg');background-position: 0px 275px;">
+                                <h2 style="position: absolute;margin-top: 30px;color:white;text-shadow: 0px 0px 7px green;">París, Francia</h2>
+                                <h3 style="position: absolute;margin-top: 65px;width:750px;font-size:15px;color:white;text-shadow: 0px 0px 7px green;">
+                                    Duración: 3 semanas<br>Entrada: &euro;26<br>Paquete todo incluído: &euro;1000 (por noche)</h3>
+
+                                <h3 class="remove" style="position: absolute;margin-top: 100px;width:750px;text-align: right;font-style: italic;color:white;text-shadow: 0px 0px 7px green;">Reservar →</h3>
+                            </div>
+    
+                            <div class="card" style="background-image: url('Medios/img/7.jpg');background-position: 0px 350px;">
+                                <h2 style="position: absolute;margin-top: 30px;color:white;text-shadow: 0px 0px 7px green;">Machu Picchu, Perú</h2>
+                                <h3 style="position: absolute;margin-top: 65px;width:750px;font-size:15px;color:white;text-shadow: 0px 0px 7px green;">
+                                    Duración: 2 semanas<br>Entrada: $50<br>Paquete todo incluído: $400 (por noche)</h3>
+
+                                <h3 class="remove" style="position: absolute;margin-top: 100px;width:750px;text-align: right;font-style: italic;color:white;text-shadow: 0px 0px 7px green;">Reservar →</h3>
+                            </div>
+    
+                            <div class="card" style="background-image: url('Medios/img/8.jpg');background-position: 0px 325px;">
+                                <h2 style="position: absolute;margin-top: 30px;color:white;text-shadow: 0px 0px 7px green;">Río de Janeiro, Brasil</h2>
+                                <h3 style="position: absolute;margin-top: 65px;width:750px;font-size:15px;color:white;text-shadow: 0px 0px 7px green;">
+                                    Duración: 1 mes<br>Entrada: $8<br>Paquete todo incluído: $200 (por noche)</h3>
+
+                                <h3 class="remove" style="position: absolute;margin-top: 100px;width:750px;text-align: right;font-style: italic;color:white;text-shadow: 0px 0px 7px green;">Reservar →</h3>
+                            </div>
+    
+                            <div class="card" style="background-image: url('Medios/img/9.jpg');">
+                                <h2 style="position: absolute;margin-top: 30px;color:white;text-shadow: 0px 0px 7px green;">Gran Barrera de Coral, Australia</h2>
+                                <h3 style="position: absolute;margin-top: 65px;width:750px;font-size:15px;color:white;text-shadow: 0px 0px 7px green;">
+                                    Duración: 2 semanas<br>Entrada: $50<br>Paquete todo incluído: $300 (por noche)</h3>
+
+                                <h3 class="remove" style="position: absolute;margin-top: 100px;width:750px;text-align: right;font-style: italic;color:white;text-shadow: 0px 0px 7px green;">Reservar →</h3>
+                            </div>
+    
+                            <div class="card" style="background-image: url('Medios/img/10.jpg');background-size: 150%;background-position: 0px 450px;margin-bottom: -40px;">
+                                <h2 style="position: absolute;margin-top: 30px;color:white;text-shadow: 0px 0px 7px green;">Isla del Cabo, Sudáfrica</h2>
+                                <h3 style="position: absolute;margin-top: 65px;width:750px;font-size:15px;color:white;text-shadow: 0px 0px 7px green;">
+                                    Duración: 1 semana<br>Entrada: $4<br>Paquete todo incluído: $200 (por noche)</h3>
+                                    
+                                <h3 class="remove" style="position: absolute;margin-top: 100px;width:750px;text-align: right;font-style: italic;color:white;text-shadow: 0px 0px 7px green;">Reservar →</h3>
+                            </div>
+                        </a>
+
+                    <br><br>
+                </section>
+
+                <section id="S2" style="display:none;">
+                    <h1>Reservaciones</h1>
+                    <hr>
+                    <h2>Mis reservaciones</h2>
+                    <br>
+
+                    <div class="card" id="noRev" style="background-image: url('Medios/img/BG2.jpg');background-position: 0px 350px;filter:grayscale(75%);backdrop-filter:blur(2px);display:none">
+                        <h2 style="position: absolute;margin-top: 30px;color:white;text-shadow: 0px 0px 7px rgb(0, 0, 0);">No hay reservaciones</h2>
+                        <h3 style="position: absolute;margin-top: 65px;width:750px;font-size:15px;color:rgb(255, 255, 255);text-shadow: 0px 0px 7px rgb(0, 0, 0);">
+                            Usa el botón de abajo para reservar</h3>
+                    </div>
+
+                    <div class="card" id="rev" style="background-image: url('Medios/img/7.jpg');background-position: 0px 350px;filter:grayscale(75%);display:none;margin-bottom:100px">
+                        %
+
+                            
+                    </div>
+
+                    <button type="button" id="cancel" onclick="localStorage.clear();Check();Change(2)" onmouseenter="this.style.backgroundColor = 'rgb(255,200,148)'" onmouseleave="this.style.backgroundColor = 'rgb(255,128,128)'" style="margin-top: -75px;background-color:rgb(255,128,128)">Cancelar reservaciones</button> 
+
+                    <div style="display: none;">
+                        <section id="replace"><h2 style="position: absolute;margin-top: 25px;color:rgb(43, 255, 0);text-shadow: 0px 0px 7px green;text-align: right;width: 770px;">Reservado &check;</h2>
+                            <h3 style="position: absolute;margin-top: 55px;width:750px;font-size:15px;color:white;text-shadow: 0px 0px 7px green;text-align: right;width: 735px;">
+                                ID: %1<br>Para %4 persona/s<br>Para %5 noche/s<br>Fecha: %3</h3>
+                            </section>
+                    </div>
+
+                    <hr>
+
+                    <h2>Realizar una nueva reservación</h2>
+                    <button type="button" onclick="Change(3)" onmouseenter="this.style.backgroundColor = 'rgb(200,255,148)'" onmouseleave="this.style.backgroundColor = 'rgb(128,255,128)'" style="margin-top: 10px;">Realizar reservación</button>
+                    <br><br>
+                </section>
+                <script>
+                    function Check(){
+                        if(localStorage.length == 0){
+                            document.getElementById("rev").style.display = "none";
+                            document.getElementById("cancel").style.display = "none";
+                            document.getElementById("noRev").style.display = "";
+                        }else{
+                            document.getElementById("noRev").style.display = "none";
+                            document.getElementById("rev").style.display = "";
+                            document.getElementById("cancel").style.display = "";
+                            console.log("a")
+                            var res = localStorage.getItem("res").split("|");
+
+                            document.getElementById("rev").innerHTML = document.getElementsByClassName("card")[parseInt(res[1])-1].innerHTML;
+
+                            document.getElementById("rev").style.backgroundImage = `url(Medios/img/${parseInt(res[1])}.jpg)`
+
+                            document.getElementById("rev").getElementsByClassName("remove")[0].outerHTML = document.getElementById("replace").outerHTML;
+
+                            for(var x=1;x<=5;x++){
+                                document.getElementById("rev").innerHTML = document.getElementById("rev").innerHTML.replace(`%${x}`, `${res[x-1]}`)
+                        }
+
+                            
+                        }
+                    }
+
+                    function Upload(){
+
+                        if(document.getElementById(`F1`).value != "" && document.getElementById(`F2`).options.selectedIndex > 0 && document.getElementById(`F3`).value != "" && document.getElementById(`F4`.value) != "" && document.getElementById(`F5`).value != ""){
+                            localStorage.clear();
+
+                            var form = [];
+
+                            for(var x=1;x<=5;x++){
+                                if(x == 2){
+                                    form.push(document.getElementById(`F2`).options.selectedIndex)
+                                }else{
+                            form.push(document.getElementById(`F${x}`).value)
+                                }
+                                document.getElementById(`F${x}`).value = ""
+                        }
+
+                            localStorage.setItem("res",`${form.join("|")}`)
+                            Check();
+                            Change(2);
+                        }else{
+                            document.getElementById("errText").style.display = "";
+                        }
+                    }
+                </script>
+
+                <section id="S3" style="display:none;text-align: center;">
+
+                    <h1>Realizar reservación</h1>
+                    <hr>
+                    <form action="#S2.1">
+                        <h3 style="margin-bottom: 7px;text-align: center;">Ingrese su número de identificación</h3><input type="text" style="width:auto;height: 25px;font-size: 25px;" id="F1">
+                        
+                        <br><br>
+
+                        <h3 style="margin-bottom: 7px;text-align: center;">¿A qué lugar le gustaría reservar?</h3><select style="width: auto;height: 35px;font-size: 25px;text-align: center;border: 1.5px solid black" id="F2">
+                            <option disabled selected>Selecciona un lugar</option>
+
+                            <optgroup label="Viajes nacionales">
+                                <option>Parque Nacional Manuel Antonio</option>
+                                <option>Volcán Arenal</option>
+                                <option>Monteverde</option>
+                                <option>Cahuita</option>
+                                <option>Tortuguero</option>
+                            </optgroup>
+
+                            <optgroup label="Viajes internacionales">
+                                <option>París, Francia</option>
+                                <option>Machu Picchu, Perú</option>
+                                <option>Río de Janeiro, Brasil</option>
+                                <option>Gran Barrera de Coral, Australia</option>
+                                <option>Ciudad del Cabo, Sudáfrica</option>
+                            </optgroup>
+                            </select>
+
+                            <br><br>
+
+                            <h3 style="margin-bottom: 7px;text-align: center;">¿En qué día le gustaría reservar?</h3><input class="num" type="date" name="A" style="width: 175px;height: 35px;font-size: 25px;" id="F3">
+
+                            <br><br>
+
+                            <h3 style="margin-bottom: 7px;text-align: center;">¿Cuantas personas irían?</h3><input class="num" type="number" value="1" min="1" name="A" id="F4">
+
+                            <br><br>
+
+                            <h3 style="margin-bottom: 7px;text-align: center;">¿Por cuantas noches?</h3><input class="num" type="number" value="1" min="1" name="A" id="F5">
+
+                            
+                            <br><br>
+
+                            <h2 id="errText" style="margin-top: -7px;color:orange;display:none;">Por favor rellena todos los espacios.</h2>
+                            <button type="button" onclick="Upload()" onmouseenter="this.style.backgroundColor = 'rgb(200,255,148)'" onmouseleave="this.style.backgroundColor = 'rgb(128,255,128)'">Subir reservación</button>
+
+                            
+                            <br><br>
+                    </form>
+                </section>
+
+                <section id="S4" style="display:none;text-align:left">
+                    <h1 style="text-align: center;">Contacto - PiruchoTravelsCR</h1>
+                    <hr>
+                    <h2>Nombre: Estela Ivette Soto Rivera.</h2>
+                    <h2>País: Costa Rica</h2>
+                    <h2>Ocupación: Guía turística.</h2>
+                    <br>
+
+                    <h2>Redes sociales</h2>
+                    <a href="https://www.facebook.com/estelasotoriveracr"
+                        style="margin-left:25px;color:rgb(5, 145, 201)">Facebook →</a><br><br>
+                    <a href="https://www.instagram.com/estelasotoriveracr/"
+                        style="margin-left:25px;color:rgb(150, 22, 189)">Instagram →</a>
+                    <br>
+                    <h2>Como contactarme</h2>
+
+                    <h3>Correo personal: <a href="mailto:estelasotoriveracr@test.com"
+                            style="color:rgb(12, 73, 204)">estelasotoriveracr@test.com →</a></h3>
+                    <h3>Número telefónico: <a href="https://api.whatsapp.com/send?phone=50699999999"
+                            style="color:rgb(22, 189, 139)">+506 9999-9999 →</a></h3>
+
+                    <span style="text-align: center;margin-left:300px"><a href="#" style="text-align: center;"
+                            onclick="Change(1)">Volver a inicio &LeftArrow;</a></span>
+                    <br><br>
+                </section>
+
+                <hr>
+                <span style="text-decoration: underline;font-size:50px;">&copy; Apuy | 2024</span>
+                <br><br>
+            </div>
+        </h1>
+    </div>
+
+</body>
+
+</html>
